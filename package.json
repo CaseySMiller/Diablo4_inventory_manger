@@ -1,5 +1,5 @@
 {
-  "name": "diablo4_inventory_manger",
+  "name": "diablo4_inventory_manager",
   "version": "1.0.0",
   "description": "Inventory Management app for Diablo 4",
   "main": "server/server.js",
