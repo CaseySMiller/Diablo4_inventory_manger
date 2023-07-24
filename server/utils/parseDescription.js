@@ -10,9 +10,8 @@ const parseOut = (input, ...args) => {
 };
 
 
-//this is a non-exported function that will take a tag that would be formated like {{tag}} and replace it 
-//with a span tag with a class of "styles.style surounding the string contained in the tag inside of 
-//a string(input) and return the string"
+// this is a non-exported function that will take a tag that would be formated like {{tag}} and 
+// replace it with a span tag with a class of "styles.[style] surounding the string{input) 
 const parseTag = (input, tag, style) => {
     return input.split(`{{${tag}}}`).reduce((acc, cur, i) => {
         // if even, add a space and add to acc
