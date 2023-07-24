@@ -1,3 +1,6 @@
+# static testing data
+static_templates/
+
 # Logs
 logs
 *.log
