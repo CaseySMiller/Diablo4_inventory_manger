@@ -1,0 +1,35 @@
+[
+    {
+        "_id": "1",
+        "name": "Aspect of the Umbral",
+        "description": "Restore STAT1 {{SR}}[1-4]{{SR}} resource of your Primary Resource when you Crowd Control an enemy.",
+        "type": "Utility",
+        "defaultStats": ["1"],
+        "whereFrom": "Champion's Demise",
+        "class": "All",
+        "seasonal": false,
+        "deprecated": false
+    },
+    {
+        "_id": "2",
+        "name": "Aspect of Arrow Storms",
+        "description": "Lucky Hit: Your {{SK}}Marksman{{SK}} Skills have up to a {{SS}}10%{{SS}} chance to create an arrow storm at the enemy’s location, dealing STAT1 Physical damage over {{SS}}3{{SS}} seconds. You can have up to {{SS}}5{{SS}} active arrow storms.",
+        "type": "Offensive",
+        "defaultStats": ["[X]"],
+        "whereFrom": "Howling Warren",
+        "class": "Rogue",
+        "seasonal": false,
+        "deprecated": false
+    },
+    {
+        "_id": "3",
+        "name": "Cheat's Aspect",
+        "description": "You take STAT1 {{SR}}[15.0-25.0%]{{SR}} less damage from Crowd Controlled enemies. Whenever a Crowd Controlled enemy deals direct damage to you, gain {{SS}}15%{{SS}}[+] Movement Speed for {{SS}}2{{SS}} seconds.",
+        "type": "Defensive",
+        "defaultStats": ["15%"],
+        "whereFrom": "Champion's Demise",
+        "class": "Rogue",
+        "seasonal": false,
+        "deprecated": false
+    }
+]

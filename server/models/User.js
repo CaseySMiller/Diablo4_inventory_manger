@@ -50,8 +50,14 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
+// virtual to count the number of seasonal realm aspects
 userSchema.virtual('sAspectCount').get(function () {
   return this.sAspects.length;
+});
+
+// virtual to count the number of eternal realm aspects
+userSchema.virtual('eAspectCount').get(function () {
+  return this.eAspects.length;
 });
 
 const User = model('User', userSchema);

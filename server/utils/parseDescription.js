@@ -49,7 +49,7 @@ const parseIn = (input) => {
     output = parseTag(output, 'SS', 'staticStat');
     // // replace all instances of {{EF}}value{{EF}} with a span tag and class "styles.statusEffect surrounding the string"
     output = parseTag(output, 'EF', 'statusEffect');
-    // // replace all instances of {{EF}}value{{EF}} with a span tag and class "styles.statusEffect surrounding the string"
+    // // replace all instances of {{SK}}value{{SK}} with a span tag and class "styles.statusEffect surrounding the string"
     output = parseTag(output, 'SK', 'skill');
 
     //return the output with the first space removed
