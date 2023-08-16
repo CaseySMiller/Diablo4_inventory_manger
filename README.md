@@ -1,2 +1,2 @@
 # Diablo4_inventory_manger
-Inventory Management app for Diablo 4
+## This will be an inventory mangment app for Diablo 4
