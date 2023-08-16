@@ -14,6 +14,10 @@ const userAspectSchema = new Schema({
     stats: {
         type: [String],
     },
+    itemType: {    
+        type: [String]
+        // add check for valid item type
+    },
 });
 
 userAspectSchema.virtual('userAspectDescription').get(function () {

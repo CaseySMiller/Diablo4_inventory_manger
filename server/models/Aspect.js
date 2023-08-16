@@ -13,10 +13,7 @@ const aspectSchema = new Schema(
             required: true,
             unique: true,
         },
-        description: {
-            type: String,
-            required: true,
-        },
+
         type: {
             type: String,
             required: true,
@@ -32,6 +29,10 @@ const aspectSchema = new Schema(
             type: String,
             required: true,
             match: [/All|Barbarian|Druid|Sorcerer|Rogue|Necromancer/i, 'Must use a valid class name'],
+        },
+        description: {
+            type: String,
+            required: true,
         },
         seasonal: {
             type: Boolean,
@@ -54,9 +55,7 @@ const aspectSchema = new Schema(
 // parse description before entering into db
 aspectSchema.pre('validate', async function (next) {
     if (this.isNew || this.isModified('description')) {
-        // console.log('applying middleware');
-        this.description = parseIn(this.description);
-        // console.log('in the if!!!');
+        this.description = await parseIn(this.description);
     };
     next();
 });
