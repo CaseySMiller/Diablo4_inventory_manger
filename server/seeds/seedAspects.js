@@ -9,6 +9,6 @@ db.once("open", async () => {
 
     await Aspect.insertMany(aspectData);
 
-    console.log("Aspects seeded!");
+    console.log("YAY... Aspects seeded ;)");
     process.exit(0);
 });

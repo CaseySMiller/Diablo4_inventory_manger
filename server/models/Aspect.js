@@ -13,7 +13,6 @@ const aspectSchema = new Schema(
             required: true,
             unique: true,
         },
-
         type: {
             type: String,
             required: true,
